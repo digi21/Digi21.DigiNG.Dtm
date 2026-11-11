@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <GenerateAssemblyInfo>True</GenerateAssemblyInfo>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <!-- Uses the Digi21 public key for public signing without a private key. -->
+    <AssemblyOriginatorKeyFile>..\Digi21.PublicKey.snk</AssemblyOriginatorKeyFile>
+    <PublicSign>true</PublicSign>
+    <AssemblyTitle>Digi21.DigiNG.Dtm</AssemblyTitle>
+    <Description>This package contains a reference assembly to open digital terrain models (.mdt) of Digi3D.AI and obtain the terrain Z coordinate at a point's X and Y coordinates.
+
+A Digi3D.AI license is required to run applications that use the assemblies published by this package. Rent a license at https://www.digi21.net/Tienda/Alquiler or buy a license at https://www.digi21.net/Tienda/Compra</Description>
+    <Company>Dreaming With Objects S.L.</Company>
+    <Product>Digi3D.AI</Product>
+    <Copyright>(c) 2000-2026 Dreaming With Objects S.L.</Copyright>
+    <AssemblyVersion>26.0.0.0</AssemblyVersion>
+    <FileVersion>26.0.0.0</FileVersion>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <Title>$(AssemblyName)</Title>
+    <Version>26.0.0</Version>
+    <Authors>José Ángel Martínez Torres</Authors>
+    <PackageProjectUrl>https://digi3d.net</PackageProjectUrl>
+    <PackageIcon>IconoDigi21.png</PackageIcon>
+    <RepositoryUrl>https://github.com/digi21/Digi21.DigiNG.Dtm.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Digi3D Digi3D.AI Digi21 Digi DigiNG Dtm DigitalTerrainModel</PackageTags>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702;67</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <NoWarn>1701;1702;67</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Digi21.DigiNG" Version="26.2.0" ExcludeAssets="buildTransitive" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="IconoDigi21.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+</Project>

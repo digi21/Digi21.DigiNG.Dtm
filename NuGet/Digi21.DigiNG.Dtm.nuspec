@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
+	<metadata>
+		<id>Digi21.DigiNG.Dtm</id>
+		<version>26.0.0</version>
+		<title>Digi21.DigiNG.Dtm</title>
+		<authors>José Ángel Martínez Torres</authors>
+		<owners></owners>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<license type="expression">MIT</license>
+		<readme>README.md</readme>
+		<icon>IconoDigi21.png</icon>
+		<projectUrl>https://digi3d.net/</projectUrl>
+		<description>This package contains a reference assembly to open digital terrain models (.mdt) of Digi3D.AI and obtain the terrain Z coordinate at a point's X and Y coordinates.
+
+A Digi3D.AI license is required to run applications that use the assemblies published by this package. Rent a license at https://www.digi21.net/Tienda/Alquiler or buy a license at https://www.digi21.net/Tienda/Compra
+		</description>
+		<copyright>(c) 2000-2026 Dreaming With Objects S.L.</copyright>
+		<tags>Digi3D Digi3D.AI Digi21 Digi DigiNG Dtm DigitalTerrainModel</tags>
+		<repository type="git" url="https://github.com/digi21/Digi21.DigiNG.Dtm.git"/>
+		<dependencies>
+			<group targetFramework="net10.0">
+				<dependency id="Digi21.DigiNG" version="26.2.0" />
+			</group>
+		</dependencies>
+	</metadata>
+	<files>
+		<file src="README.md" target="README.md" />
+		<file src="..\Digi21.DigiNG.Dtm\obj\Release\net10.0\ref\Digi21.DigiNG.Dtm.dll" target="ref\net10.0\Digi21.DigiNG.Dtm.dll" />
+		<file src="IconoDigi21.png" target="IconoDigi21.png" />
+	</files>
+</package>
